@@ -3,5 +3,6 @@ dist/
 *.zip
 .DS_Store
 Thumbs.db
-scripts/
+# Only ignore a root-level scripts/ folder — never external/scripts (8frame engine)
+/scripts/
 local-test-screenshot.png
