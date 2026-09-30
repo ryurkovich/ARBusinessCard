@@ -51,7 +51,7 @@
            .glb under models/custom/ and uncomment (or add) the custom line.
            ================================================================= -->
       <!-- CUSTOM MODEL (workshop personalization): drop your .glb in models/custom/ -->
-      <!-- <a-asset-item id="custom-model" src="./models/custom/YOUR-FILE.glb"></a-asset-item> -->
+      <a-asset-item id="custom-model" src="./models/custom/video-camera.glb"></a-asset-item>
 
       <!-- Bundled fallbacks — use these only if your custom download fails -->
       <a-asset-item id="robot-model"     src="./models/robot.glb"></a-asset-item>
@@ -84,7 +84,7 @@
              ================================================================= -->
         <a-entity
           id="active-model"
-          gltf-model="#plant-model"
+          gltf-model="#custom-model"
           scale="0.2 0.2 0.2"
           position="0 0.1 0"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear"
@@ -136,12 +136,12 @@
     // If you add a custom model, include it here so double-tap can reach it.
     // =======================================================================
     const models = [
+      { id: 'custom-model',    scale: '0.2 0.2 0.2',    position: '0 0.1 0' },
       { id: 'robot-model',     scale: '0.2 0.2 0.2',    position: '0 0.1 0' },
       { id: 'crystal-model',   scale: '0.15 0.15 0.15', position: '0 0.1 0' },
       { id: 'satellite-model', scale: '0.25 0.25 0.25', position: '0 0.1 0' },
       { id: 'trophy-model',    scale: '0.2 0.2 0.2',    position: '0 0.1 0' },
       { id: 'plant-model',     scale: '0.2 0.2 0.2',    position: '0 0.05 0' },
-      // { id: 'custom-model',  scale: '0.2 0.2 0.2',    position: '0 0.1 0' },
     ]
     let currentModelIndex = 0
     let lastTap = 0
