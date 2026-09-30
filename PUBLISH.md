@@ -1,14 +1,20 @@
 # Publish checklist — instructor template repo
 
-Use this after the workshop files are ready in this folder.
+Local workshop files are ready. An initial `main` commit already exists in this folder.
+You still need to authenticate `gh` once, create the remote, and mark it as a Template.
 
-## 1. Create the GitHub repo
+## 0. Sign in to GitHub CLI (one time)
+
+```bash
+gh auth login --hostname github.com --git-protocol https --web
+```
+
+Use the browser OAuth flow. Do not paste tokens into an AI chat.
+
+## 1. Create the GitHub repo and push
 
 ```bash
 cd /Users/ohitson/Documents/GitHub/ARBusinessCard
-git init
-git add .
-git commit -m "Initial CHIO XR AR business card workshop template"
 gh repo create chio-xr-ar-business-card --public --source=. --remote=origin --push
 ```
 
