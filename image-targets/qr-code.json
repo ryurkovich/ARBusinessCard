@@ -4,13 +4,13 @@
   "name": "qr-code",
   "type": "PLANAR",
   "properties": {
-    "left": 198,
+    "left": 0,
     "top": 0,
-    "width": 1188,
-    "height": 1584,
-    "isRotated": true,
-    "originalWidth": 1584,
-    "originalHeight": 1584
+    "width": 1147,
+    "height": 1147,
+    "isRotated": false,
+    "originalWidth": 1147,
+    "originalHeight": 1147
   },
   "resources": {
     "originalImage": "qr-code_original.png",
